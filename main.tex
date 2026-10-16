@@ -1,0 +1,160 @@
+\documentclass[UTF8,a4paper,11pt,titlepage,oneside]{ctexbook}
+
+\usepackage[english]{babel}
+\usepackage{soul}
+% \usepackage{color} % If you want to define colors for code syntax highlighting
+\usepackage[x11names]{xcolor} % 使用 x11names 以支持更多颜色
+% \usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{makecell}
+\usepackage{caption}
+\usepackage{listings}
+\captionsetup[table]{name=表} % 将表的标题设置为“表”
+\captionsetup[figure]{name=图} % 将表的标题设置为“表”
+\renewcommand{\lstlistingname}{列表} % 将 listing 改为 列表
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{pifont}
+\usepackage{amsfonts}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{bm}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{url}
+
+\usepackage{lmodern}
+\usepackage{makecell}
+\usepackage{subcaption}
+% \usepackage{subfig}
+%\usepackage{subfigure}
+
+\usepackage{comment}
+\usepackage{appendix}
+\usepackage{geometry}
+\geometry{a4paper,left=3.5cm,right=3.5cm,top=4cm,bottom=5cm}
+\usepackage{marvosym}
+
+\usepackage{hyperref}
+\definecolor{ForestGreen}{RGB}{0,100,0}
+\hypersetup{
+    colorlinks=true,
+    hypertexnames=false, % 目录、封面与正文页码重置时仍保持链接锚点唯一
+    linkcolor=red,
+    citecolor=ForestGreen,
+    urlcolor=blue
+}
+
+% \usepackage[colorlinks=true, linkcolor=red, citecolor=ForestGreen, urlcolor=blue]{hyperref}
+% \setlength{\parindent}{2em}
+
+\lstset{
+    basicstyle=\ttfamily,
+    columns=fullflexible,
+    keywordstyle=\color{blue},
+    commentstyle=\color{green!40!black},
+    stringstyle=\color{red},
+}
+
+% \usepackage{subfig}
+\usepackage{threeparttable}
+\usepackage{tocloft}
+
+% 规定图片路径
+\graphicspath{{pic/}}
+
+\begin{document}
+\renewcommand{\contentsname}{目录}
+\renewcommand{\listfigurename}{插图}
+\renewcommand{\listtablename}{表格}
+\tableofcontents
+\listoffigures
+\listoftables
+
+% 长路径和内容哈希允许换行；不添加用户模板之外的宏包。
+\setlength{\emergencystretch}{3em}
+\expandafter\def\expandafter\UrlBreaks\expandafter{\UrlBreaks
+  \do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9}
+
+\begin{titlepage}\centering\vspace*{1.5cm}
+  {\Large 作品设计与实验报告\par}\vspace{1.7cm}
+  {\Huge\bfseries 面向电力边缘网关的\par 软件密码资产识别与\par 量子迁移辅助工具\par}
+  \vspace{1.1cm}{\Large QCS 识别引擎与 GridLens 应用示例\par}\vfill
+  {\large 十三算法开发范围复扫与五类终端固件验证修订版\par}
+  \vspace{.6cm}{\large 2026 年 10 月 16 日\par}
+  \vspace{.5cm}{\small 实现范围：Linux 软件分析；Windows 离线网页展示\par}
+\end{titlepage}
+\chapter*{摘要}\addcontentsline{toc}{chapter}{摘要}
+电力边缘设备的软件升级、遥测通信与身份认证依赖多种密码算法。
+源码、去符号程序及固件组件的表示差异，使人工清点密码资产成本较高；
+传统公钥机制又面临容错量子计算条件下的结构性威胁。
+本作品实现密码算法识别工具 QCS，并构建虚拟电力边缘网关发布前体检示例 GridLens，
+将离线软件分析结果组织为可追溯的资产清单与迁移待办。
+
+QCS 综合使用源码词法与语法分析、结构化符号解析、字节特征、已知函数签名、
+运算图和受预算约束的语义分析。报告区分接口引用、实现包含与运行时使用，
+为已知算法保留文件、位置、证据来源和扫描状态。
+国密模块补充 SM2、SM3、SM4；可选 Miasm 后端通过独立进程提供有限控制流图、
+保守状态合并及带位宽和输入身份的位向量摘要。
+对未知参数、共享结构与预算耗尽保持明确的不确定状态。
+
+算法实验覆盖 AES、DES、RC4、ChaCha20、RSA、ECDSA、ECDH、MD5、SHA-1、SHA-256、SM2、SM3、SM4，
+与理论章节的十三种核心算法逐项对应。
+从既有开发总体全取源码及 x86-64/ARM64 程序，冻结 1071 个不同内容输入，
+保留全部编译变体、阴性对照和不完整状态，实际新扫得到 747 个范围内正标签。
+TP/FP/FN 为 700/0/47，总体实现召回率为 93.71\%，漏报率为 6.29\%。
+逐算法以漏报率不超过 10\% 为目标，逐项结果及达标状态在正文列出；精确率按实际结果保留。
+这些是已知开发家族的范围内回归，不能解释为独立未知实现验证。
+原五算法混合演示、完整开发、历史复查及语义后端对照继续保留。
+
+GridLens 将遥测通信、升级校验、身份认证与第三方插件组成固定虚拟发布包。
+每个版本与架构视图包含 6 个文件、8 项资产；整改示例将遗留摘要资产由 2 项降为 0 项，
+并保留 3 项传统公钥迁移关注。一次本机六文件现场扫描后端耗时 8.42 秒。
+作品的主要优势是证据可审查、多载体统一报告、可限制资源和无硬件展示，
+并补齐五类终端的软件级固件场景：10 份双架构自制镜像实际解包扫描，
+80 个提取文件中包含 20 个 ELF；实现标签 TP/FP/FN 为 22/1/0。
+镜像为项目模拟交付，不代表真实厂商或实体设备验证。
+当前未知密码实现覆盖、完整网关运行及后量子协议迁移仍需继续研究。
+
+\noindent\textbf{关键词：}密码资产；静态程序分析；国密算法；位向量语义；量子迁移；电力边缘网关
+\chapter*{Abstract}\addcontentsline{toc}{chapter}{Abstract}
+This report presents QCS, an offline cryptographic asset identification tool,
+and GridLens, a pre-release inspection example for a virtual Linux power edge gateway.
+QCS combines source analysis, structured symbols, byte patterns, known-function
+signatures, operation graphs and budgeted semantic analysis. API references,
+implementation evidence and unknown runtime use are reported separately.
+An optional isolated Miasm backend provides bounded control-flow analysis and
+typed bitvector summaries without claiming recovery of the original source code.
+
+A fresh, locked regression covers all thirteen core algorithms described in the
+theory chapter. Every source and x86-64/ARM64 executable in the existing development
+population is retained, including compiler variants, negative controls and partial scans.
+The 1071 distinct inputs contain 747 positive file--algorithm labels,
+yielding 700 true positives, 0 false positives and 47 false negatives.
+Overall implementation recall is 93.71\% and the false-negative rate is 6.29\%.
+Per-algorithm counts and results against a 10\% false-negative ceiling are reported,
+with precision preserved as measured. This is known-family development regression,
+not independent generalization. The earlier five-algorithm demonstration, full development
+results, historical rechecks and semantic-backend comparisons are also retained.
+GridLens presents traceable evidence, human-reviewed migration tasks and two-release
+comparison through an offline website. A six-file live scan takes 8.42 seconds on
+the recorded host. Five distinct terminal software scenarios also provide ten
+synthetic firmware images, actually unpacked and scanned across two architectures.
+Their twenty ELF files yield 22 true positives, one false positive and no false
+negatives in the declared scope; these are software fixtures, not vendor-device validation.
+Unseen-implementation coverage and end-to-end post-quantum
+migration remain open research and engineering tasks.
+\mainmatter
+\chapter{研究背景、相关工作与作品优势}\input{chapter/1.tex}
+\chapter{理论基础与实验原理}\input{chapter/2.tex}
+\chapter{系统设计与实验方案}\input{chapter/3.tex}
+\chapter{实验结果与分析}\input{chapter/4.tex}
+\chapter{总结与展望}\input{chapter/5.tex}
+\appendix\chapter{实验记录、图像与复现入口}\input{chapter/appendix.tex}
+\chapter{完整开发与历史评测结果}\label{chap:historical-results}\input{chapter/history-results.tex}
+\backmatter\renewcommand{\bibname}{参考文献}
+\bibliographystyle{plain}\bibliography{bib/references}
+\end{document}
