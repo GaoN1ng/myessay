@@ -42,6 +42,8 @@
   \nolinkurl{pic/} 只保存正文实际使用的 19 张 PNG。
   P18/P19 为第一章融合时依据文献补绘的时间示意，绘图脚本与来源说明位于
   \nolinkurl{essay_support/2026-10-16/chapter1-merge/}。
+  P16/P17 现依据 E13 的最终复扫重新生成，E11/E12 旧图和数据保留；
+  本轮绘图脚本与数据来源记录位于 E13 下 \nolinkurl{emit_results.py} 和 \nolinkurl{pic/}。
 
   \item[E09] 五算法混合演示：R 下 \nolinkurl{showcase/20261016/}，
   保存清单、内容锁、输入与上下文、241 份实际扫描报告及来源分组。
@@ -57,6 +59,59 @@
   保存完整总体、纳入清单、输入与上下文内容锁，以及
   \nolinkurl{fresh-scan/} 中的冻结、1071 份实际新扫报告和结果。
   可脱离检测器重算预测的报告副本在 R 下 \nolinkurl{data/algorithm-suite-20261016/}。
+
+  \item[E12] 源码覆盖修订与同清单复扫：
+  \nolinkurl{essay_support/2026-10-16/source-recall-repair/}。
+  其中 \nolinkurl{reviewed-source-additions.json} 保存十五个新增模块的版本、位置与审核依据，
+  \nolinkurl{source-final/} 保存 154 份源码的预复扫，
+  \nolinkurl{full-scan/} 保存最终 1071 份原始报告、冻结与汇总。
+  \nolinkurl{comparison.json} 和 \nolinkurl{raw-evidence-verification.json}
+  分别保存与 E11 首轮结果的逐文件对照及独立证据重算。
+  输入、上下文与真值沿用 E11 的内容锁，修订前结果继续保留。
+
+  \item[E13] 源码算法子组修订与变体核查：
+  \nolinkurl{essay_support/2026-10-17/source-subgroups/}。
+  \nolinkurl{reviewed-source-additions.json} 保存八个模块及一组源码与头文件联合参考的审核，
+  \nolinkurl{full-scan/} 保存相同 1071 份输入再次实际扫描的冻结、报告与汇总，
+  \nolinkurl{comparison.json} 和 \nolinkurl{source-algorithm-comparison.json}
+  保存与 E12 的逐文件、逐源码算法对照。
+  \nolinkurl{variant-audit.json} 记录剩余样例的八轮循环与原 ChaCha20 标签差异；
+  真值和输入不因本次复核改变。
+
+  \item[E14] 每算法至少二十份源码的扩充实验：
+  \nolinkurl{essay_support/2026-10-17/source-expansion/}。
+  实际源码、配套上下文、许可、冻结清单与十三份算法清单保存在
+  \nolinkurl{ustc_tool_middle/build/datasets/source-expansion-20261017/}。
+  \nolinkurl{scan/} 保存 363 份原始报告、检测器冻结和汇总；
+  \nolinkurl{verification.json} 为独立重算与原 154 份预测一致性核验。
+  \nolinkurl{reviewed-additions.json}、\nolinkurl{provenance-supplement.json}
+  保存新增审核与历史来源补充，\nolinkurl{source-index.csv} 可按算法和来源检索，
+  \nolinkurl{remaining-issues.json} 保留所有漏报、误报和部分完成项。
+  该目录保留语义修订前的 214/1/104 和 32.70\% 基线；该轮没有依据新增结果修改检测器。
+
+  \item[E15] 扩充源码集合的语义修订与配对复扫：
+  \nolinkurl{essay_support/2026-10-17/source-expansion-repair/}。
+  \nolinkurl{scan/} 保存相同 363 份入口的修订后报告、检测器冻结和汇总，
+  \nolinkurl{comparison.json} 给出 8 个新增正确标签、零丢失与零新增误报的逐项对照，
+  \nolinkurl{verification.json} 为独立证据重算与输入核验。
+  \nolinkurl{context-lock.json} 单列实际解析的本地依赖，
+  \nolinkurl{algorithm-table.json}、\nolinkurl{source-index.csv} 和
+  \nolinkurl{remaining-issues.json} 保存修订后逐算法计数及所有剩余问题。
+  原清单、标签和 149 条参考库保持不变；检测器根据已观察集合修订，不作为独立泛化验证。
+
+  \item[E16] 已知源码库覆盖扩充与参考库消融复测：
+  \nolinkurl{essay_support/2026-10-17/source-recall-coverage/}。
+  \nolinkurl{final-scan/}、\nolinkurl{final-ablation/} 分别保存 226 条与原 149 条参考库下
+  各 363 份原始报告、冻结记录和汇总；综合为 306/1/12，消融为 225/1/93。
+  \nolinkurl{verification.json} 与 \nolinkurl{comparison.json} 为独立证据重算及收益归因，
+  区分 3 个语义新增标签与 81 个参考覆盖标签，无原有检出丢失和新增误报。
+  \nolinkurl{module-reviews.json}、\nolinkurl{reference-verification.json}
+  保存 77 个模块主体审核与 231 项参考正反例核验。
+  \nolinkurl{context-lock.json} 核验 923 个实际上下文，原有 919 份未变、另访问四份原锁内文件。
+  \nolinkurl{algorithm-table.json}、\nolinkurl{source-index.csv} 与
+  \nolinkurl{remaining-issues.json} 保存最新逐算法计数、逐文件索引及全部剩余问题。
+  原输入、标签和分母不变；本轮依据已观察集合建库，不作为独立泛化或纯语义成绩。
+
 \end{description}
 
 E01、E02、E06 的表格已按每行的已知范围重新核算，计数与原汇总一致。

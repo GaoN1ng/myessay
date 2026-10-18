@@ -43,8 +43,8 @@
 \hypersetup{
     colorlinks=true,
     hypertexnames=false, % 目录、封面与正文页码重置时仍保持链接锚点唯一
-    linkcolor=red,
-    citecolor=ForestGreen,
+    linkcolor=black, % 目录、插图目录、表格目录及内部交叉引用统一黑色
+    citecolor=black, % 正文文献引用使用黑色数字标号
     urlcolor=blue
 }
 
@@ -66,6 +66,36 @@
 % 规定图片路径
 \graphicspath{{pic/}}
 
+% 普通页与章节首页统一为页脚居中页码，不使用书籍默认页眉。
+\pagestyle{plain}
+
+% 经典数字编号参考文献：正文平排 [1]，列表五号宋体、罗马西文字体，
+% 编号左置、正文悬挂对齐；保留标准 BibTeX plain 条目格式。
+\makeatletter
+\def\@cite#1#2{[{#1\if@tempswa , #2\fi}]}
+\renewcommand{\@biblabel}[1]{[#1]}
+\renewenvironment{thebibliography}[1]
+  {\chapter*{\bibname}%
+   \addcontentsline{toc}{chapter}{\bibname}%
+   \normalfont\rmfamily\songti\zihao{5}%
+   \setlength{\baselineskip}{16pt}%
+   \color{black}\hypersetup{urlcolor=black}%
+   \list{\@biblabel{\@arabic\c@enumiv}}%
+     {\settowidth\labelwidth{\@biblabel{#1}}%
+      \setlength{\labelsep}{0.6em}%
+      \setlength{\leftmargin}{\labelwidth}%
+      \addtolength{\leftmargin}{\labelsep}%
+      \setlength{\itemsep}{3pt}%
+      \setlength{\parsep}{0pt}%
+      \setlength{\topsep}{0pt}%
+      \usecounter{enumiv}%
+      \let\p@enumiv\@empty
+      \renewcommand{\theenumiv}{\@arabic\c@enumiv}}%
+   \sloppy\clubpenalty4000\widowpenalty4000\sfcode`\.=1000\relax}
+  {\def\@noitemerr{\@latex@warning{Empty `thebibliography' environment}}%
+   \endlist}
+\makeatother
+
 \begin{document}
 \renewcommand{\contentsname}{目录}
 \renewcommand{\listfigurename}{插图}
@@ -83,8 +113,8 @@
   {\Large 作品设计与实验报告\par}\vspace{1.7cm}
   {\Huge\bfseries 面向电力边缘网关的\par 软件密码资产识别与\par 量子迁移辅助工具\par}
   \vspace{1.1cm}{\Large QCS 识别引擎与 GridLens 应用示例\par}\vfill
-  {\large 十三算法开发范围复扫与五类终端固件验证修订版\par}
-  \vspace{.6cm}{\large 2026 年 10 月 16 日\par}
+  {\large 十三算法已知实现覆盖与参考补充复测修订版\par}
+  \vspace{.6cm}{\large 2026 年 10 月 18 日\par}
   \vspace{.5cm}{\small 实现范围：Linux 软件分析；Windows 离线网页展示\par}
 \end{titlepage}
 \chapter*{摘要}\addcontentsline{toc}{chapter}{摘要}
@@ -105,10 +135,19 @@ QCS 综合使用源码词法与语法分析、结构化符号解析、字节特�
 与理论章节的十三种核心算法逐项对应。
 从既有开发总体全取源码及 x86-64/ARM64 程序，冻结 1071 个不同内容输入，
 保留全部编译变体、阴性对照和不完整状态，实际新扫得到 747 个范围内正标签。
-TP/FP/FN 为 700/0/47，总体实现召回率为 93.71\%，漏报率为 6.29\%。
+TP/FP/FN 为 726/0/21，总体实现召回率为 97.19\%，漏报率为 2.81\%。
 逐算法以漏报率不超过 10\% 为目标，逐项结果及达标状态在正文列出；精确率按实际结果保留。
+完善已知版本源码覆盖及直接包含头文件的联合内容核验后，源码组漏报为 1/105，即 0.95\%。
 这些是已知开发家族的范围内回归，不能解释为独立未知实现验证。
-原五算法混合演示、完整开发、历史复查及语义后端对照继续保留。
+另以包含 110 份历史验证来源的 363 份源码进行参考补充复测，十三种算法各含 20--55 份正标签源码，
+在相同清单上继续修订语义路径并补充 77 个经主体审核的已知版本参考后，
+综合 TP/FP/FN 为 306/1/12，召回率为 96.23\%，精确率为 99.67\%，漏报率为 3.77\%，
+各算法漏报率均不超过 10\%。相较上一轮 30.19\% 基线，新增 84 个正确标签，
+未丢失原有检出且未新增误报；其中 3 个来自语义修订，81 个来自新增参考覆盖。
+最终代码加载原参考库的消融结果为 225/1/93，漏报率为 29.25\%。
+新增参考全部来自本集合，其中 59 条对应历史验证来源；该组 110 份源码的复测召回率由 35.65\% 提高到 90.43\%。
+综合成绩主要体现已观察集合的已知版本覆盖，不代表未知家族泛化或纯语义成绩。
+原五算法混合演示、完整开发、历史复查及语义后端对照在附录保留。
 
 GridLens 将遥测通信、升级校验、身份认证与第三方插件组成固定虚拟发布包。
 每个版本与架构视图包含 6 个文件、8 项资产；整改示例将遗留摘要资产由 2 项降为 0 项，
@@ -133,12 +172,27 @@ A fresh, locked regression covers all thirteen core algorithms described in the
 theory chapter. Every source and x86-64/ARM64 executable in the existing development
 population is retained, including compiler variants, negative controls and partial scans.
 The 1071 distinct inputs contain 747 positive file--algorithm labels,
-yielding 700 true positives, 0 false positives and 47 false negatives.
-Overall implementation recall is 93.71\% and the false-negative rate is 6.29\%.
+yielding 726 true positives, 0 false positives and 21 false negatives.
+Overall implementation recall is 97.19\% and the false-negative rate is 2.81\%.
 Per-algorithm counts and results against a 10\% false-negative ceiling are reported,
-with precision preserved as measured. This is known-family development regression,
+with precision preserved as measured. After extending exact-version references
+and verifying directly included implementation headers, the source subset has
+1 miss out of 105 positive labels (0.95\%). This is known-family development regression,
 not independent generalization. The earlier five-algorithm demonstration, full development
-results, historical rechecks and semantic-backend comparisons are also retained.
+results, historical rechecks and semantic-backend comparisons are retained in the appendix.
+A separately frozen expansion scans 363 distinct source inputs with 20--55 positive
+source files per algorithm. After further semantic repairs and 77 reviewed exact-version
+references, the combined scan yields 306 true positives, one false positive and 12 false
+negatives (3.77\% false-negative rate), with every algorithm at or below 10\%.
+Compared with the previous 30.19\% baseline, 84 correct labels are added without
+losing detections or adding false positives: three from semantic repairs and 81 from
+reference coverage. With the final code and the original reference library, the
+ablation yields 225/1/93 (29.25\% false-negative rate).
+All 77 added references come from this corpus, including 59 from its 110 historical-validation
+source files; recall within that group rises from 35.65\% to 90.43\% after reference addition.
+Incomplete scans and provenance remain recorded. The combined result primarily
+measures known-version coverage on an observed development corpus; it is neither
+a pure semantic result nor an independent family holdout.
 GridLens presents traceable evidence, human-reviewed migration tasks and two-release
 comparison through an offline website. A six-file live scan takes 8.42 seconds on
 the recorded host. Five distinct terminal software scenarios also provide ten

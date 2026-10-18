@@ -1,0 +1,343 @@
+{
+  "date_shanghai": "2026-10-18",
+  "pdf_page_numbering": "从PDF第一页起，1-based，包含会议封面",
+  "usage": "第三方原图仅作论文配图选型参考，未插入论文正文。正式采用需署名引用并核对再利用条件；优先按本文方法改绘。",
+  "papers": [
+    {
+      "id": "cpg",
+      "file": "cpg-yamaguchi-2014.pdf",
+      "title": "Modeling and Discovering Vulnerabilities with Code Property Graphs",
+      "authors": "Fabian Yamaguchi, Nico Golde, Daniel Arp, Konrad Rieck",
+      "year": "2014",
+      "venue": "IEEE Symposium on Security and Privacy, pp. 590–604",
+      "url": "https://fabianyamaguchi.com/files/2014-ieeesp.pdf",
+      "doi": "10.1109/SP.2014.44",
+      "version": "作者公开稿，15页",
+      "pdf_pages": 15,
+      "first_page_excerpt": "Modeling and Discovering Vulnerabilities\nwith Code Property Graphs\nFabian Yamaguchi∗, Nico Golde†, Daniel Arp∗and Konrad Rieck∗\n∗University of G¨ottingen, Germany\n†Qualcomm Research Germany\nAbstract—The vast majority of security breaches encountered\ntoday are a direct result of insecure code. Consequently, the\nprotection of computer systems critically depends on the rigorous\nidentiﬁcation of vulnerabilities in software, a tedious and error-\nprone process requiring signiﬁcant expertise. Unfortunately, a\nsingle ﬂaw sufﬁces to undermine the security of a system and\nthus the sheer amount of code to audit plays into the attacker’s\ncards. In this paper, we present a method to effectively mine\nlarg",
+      "sha256": "4a2e2f6526866d17315ba6a9a69bd71d6647e70b8976639dfd31969944b646f1",
+      "local_pdf": "papers/cpg-yamaguchi-2014.pdf",
+      "checked_date_shanghai": "2026-10-18"
+    },
+    {
+      "id": "graphcodebert",
+      "file": "graphcodebert-guo-2020-v4.pdf",
+      "title": "GraphCodeBERT: Pre-training Code Representations with Data Flow",
+      "authors": "Daya Guo et al.",
+      "year": "2020/2021",
+      "venue": "ICLR 2021",
+      "url": "https://arxiv.org/pdf/2009.08366v4",
+      "doi": "10.48550/arXiv.2009.08366",
+      "version": "2020年预印本，v4；PDF首页注明ICLR 2021",
+      "pdf_pages": 18,
+      "first_page_excerpt": "Published as a conference paper at ICLR 2021\nGRAPHCODEBERT: PRE-TRAINING CODE REPRESEN-\nTATIONS WITH DATA FLOW\nDaya Guo1∗, Shuo Ren2∗, Shuai Lu3∗, Zhangyin Feng4∗, Duyu Tang5, Shujie Liu5, Long Zhou5,\nNan Duan5, Alexey Svyatkovskiy6, Shengyu Fu6, Michele Tufano6, Shao Kun Deng6,\nColin Clement6, Dawn Drain6, Neel Sundaresan6, Jian Yin1, Daxin Jiang7, and Ming Zhou5\n1School of Computer Science and Engineering, Sun Yat-sen University.\n2Beihang University, 3Peking University, 4Harbin Institute of Technology,\n5Microsoft Research Asia, 6Microsoft Devdiv, 7Microsoft STCA\nABSTRACT\nPre-trained models for programming language have achieved dramatic empirical\nimprovements on a variety of code-related t",
+      "sha256": "2089cf580fd13526c7cfdd423c56c496434c0805d7096433e69efb5c0d5bd16a",
+      "local_pdf": "papers/graphcodebert-guo-2020-v4.pdf",
+      "checked_date_shanghai": "2026-10-18"
+    },
+    {
+      "id": "binkit",
+      "file": "binkit-kim-2020.pdf",
+      "title": "Revisiting Binary Code Similarity Analysis using Interpretable Feature Engineering and Lessons Learned",
+      "authors": "Dongkwan Kim, Eunsoo Kim, Sang Kil Cha, Sooel Son, Yongdae Kim",
+      "year": "2020",
+      "venue": "作者2020年公开稿（复用10月16日已核实PDF）",
+      "url": "https://0xdkay.me/pub/2020/kim-arxiv2020.pdf",
+      "doi": null,
+      "version": "21页作者公开稿；不以网站路径推定最终发表版本",
+      "pdf_pages": 21,
+      "first_page_excerpt": "1\nRevisiting Binary Code Similarity Analysis using\nInterpretable Feature Engineering and Lessons\nLearned\nDongkwan Kim, Eunsoo Kim, Sang Kil Cha, Sooel Son, Yongdae Kim\nAbstract—Binary code similarity analysis (BCSA) is widely used for diverse security applications such as plagiarism detection,\nsoftware license violation detection, and vulnerability discovery. Despite the surging research interest in BCSA, it is signiﬁcantly\nchallenging to perform new research in this ﬁeld for several reasons. First, most existing approaches focus only on the end results,\nnamely, increasing the success rate of BCSA, by adopting uninterpretable machine learning. Moreover, they utilize their own\nbenchmark shari",
+      "sha256": "b980704956e645e9bedc34494e28d3ed992745fbed49b0ced3c5da54b28d47f1",
+      "local_pdf": "papers/binkit-kim-2020.pdf",
+      "checked_date_shanghai": "2026-10-18"
+    },
+    {
+      "id": "p2im",
+      "file": "p2im-feng-2020.pdf",
+      "title": "P2IM: Scalable and Hardware-independent Firmware Testing via Automatic Peripheral Interface Modeling",
+      "authors": "Bo Feng, Alejandro Mera, Long Lu",
+      "year": "2020",
+      "venue": "29th USENIX Security Symposium, pp. 1237–1254",
+      "url": "https://www.usenix.org/system/files/sec20-feng.pdf",
+      "doi": null,
+      "version": "会议官方PDF，19页，含1页封面",
+      "pdf_pages": 19,
+      "first_page_excerpt": "This paper is included in the Proceedings of the \n29th USENIX Security Symposium.\nAugust 12–14, 2020\n978-1-939133-17-5\nOpen access to the Proceedings of the \n29th USENIX Security Symposium \nis sponsored by USENIX.\nP2IM: Scalable and Hardware-independent \nFirmware Testing via Automatic Peripheral \nInterface Modeling\nBo Feng, Alejandro Mera, and Long Lu, Northeastern University\nhttps://www.usenix.org/conference/usenixsecurity20/presentation/feng\n",
+      "sha256": "a5f2796a4c55dffc113b27b5de2c656ccf3cc40c3b1a001293fd5847321c8403",
+      "local_pdf": "papers/p2im-feng-2020.pdf",
+      "checked_date_shanghai": "2026-10-18"
+    },
+    {
+      "id": "rf",
+      "file": "rf-louppe-2014-v3.pdf",
+      "title": "Understanding Random Forests: From Theory to Practice",
+      "authors": "Gilles Louppe",
+      "year": "2014",
+      "venue": "University of Liège，博士学位论文",
+      "url": "https://arxiv.org/pdf/1407.7502v3",
+      "doi": "10.48550/arXiv.1407.7502",
+      "version": "2014年学位论文，下载PDF为2015-06-03修订的v3，223页",
+      "pdf_pages": 223,
+      "first_page_excerpt": "University of Liège\nFaculty of Applied Sciences\nDepartment of Electrical Engineering & Computer Science\nPhD dissertation\nU N D E R S TA N D I N G R A N D O M F O R E S T S\nfrom theory to practice\nby Gilles Louppe\nAdvisor: Prof. Pierre Geurts\nJuly 2014\nL G\nL G\narXiv:1407.7502v3  [stat.ML]  3 Jun 2015\n",
+      "sha256": "e1db9593b5e7f25dce52d60e6781c910dd37ce8311ffbb0f28502c3c15f90102",
+      "local_pdf": "papers/rf-louppe-2014-v3.pdf",
+      "checked_date_shanghai": "2026-10-18"
+    },
+    {
+      "id": "graphrag",
+      "file": "graphrag-edge-2024-v2.pdf",
+      "title": "From Local to Global: A GraphRAG Approach to Query-Focused Summarization",
+      "authors": "Darren Edge et al.",
+      "year": "2024",
+      "venue": "arXiv:2404.16130",
+      "url": "https://arxiv.org/pdf/2404.16130v2",
+      "doi": "10.48550/arXiv.2404.16130",
+      "version": "2024年预印本，2025-02-19修订的v2，26页",
+      "pdf_pages": 26,
+      "first_page_excerpt": "From Local to Global: A GraphRAG Approach to\nQuery-Focused Summarization\nDarren Edge1†\nHa Trinh1†\nNewman Cheng2\nJoshua Bradley2\nAlex Chao3\nApurva Mody3\nSteven Truitt2\nDasha Metropolitansky1\nRobert Osazuwa Ness1\nJonathan Larson1\n1Microsoft Research\n2Microsoft Strategic Missions and Technologies\n3Microsoft Office of the CTO\n{daedge,trinhha,newmancheng,joshbradley,achao,moapurva,\nsteventruitt,dasham,robertness,jolarso}@microsoft.com\n†These authors contributed equally to this work\nAbstract\nThe use of retrieval-augmented generation (RAG) to retrieve relevant informa-\ntion from an external knowledge source enables large language models (LLMs)\nto answer questions over private and/or previously unse",
+      "sha256": "730f1a9f38d16689900969a3eeeb1b31e45eda1dcc1f37a043afa90aff76c867",
+      "local_pdf": "papers/graphrag-edge-2024-v2.pdf",
+      "checked_date_shanghai": "2026-10-18"
+    }
+  ],
+  "figures": [
+    {
+      "id": "R01",
+      "paper": "cpg",
+      "figure": "2",
+      "page": 3,
+      "clip": [
+        43,
+        50,
+        575,
+        258
+      ],
+      "title": "AST、CFG与PDG的三种代码表示",
+      "placement": "F01／2.2.1 源码语法、已知版本与配置依赖",
+      "file": "R01-cpg-fig2-ast-cfg-pdg.png",
+      "keywords": [
+        "code property graph",
+        "AST CFG PDG"
+      ],
+      "relevance": "解释语法、控制流和数据依赖分别保留什么信息；适合作为三栏布局参考。",
+      "boundary": "原图是通用代码例子，未包含本文的密码接口、构建条件和业务依赖。",
+      "caption_and_crop_text": "DECL\nCOND\nIF\nSTMT\nARG\nFUNC\nint\n=\nx\nsource\nCALL\n=\ny\n*\n2\nx\nint\nDECL\n<\nx\nMAX\nCALL\nsink\ny\nDECL\nPRED\nIF\nSTMT\nARG\nFUNC\nint\n=\nx\nsource\nCALL\n=\ny\n*\n2\nx\nint\nDECL\n<\nx\nMAX\nCALL\nsink\ny\n(a) Abstract syntax tree (AST)\nENTRY\nEXIT\nint x = source()\nif (x < MAX)\ny = 2 * x\nsink(y)\nfalse\ntrue\nε \nε \nε \nε \nENTRY\nEXIT\nint x = source()\nif (x < MAX)\nsink(y)\nint y = 2 * x\n(b) Control ﬂow graph (CFG)\nint x = source()\nif (x < MAX)\ny = 2 * x\nsink(y)\nDx\nDx\nCtrue\nCtrue\nDy\nint x = source()\nif (x < MAX)\nint y = 2 * x\nsink(y)\n(c) Program dependence graph (PDG)\nFig. 2: Representations of code for the example in Figure 1. Control and data dependencies are indicated by C and D in the\nprogram dependence graph.",
+      "pixels": [
+        1596,
+        624
+      ],
+      "sha256": "ee53377948b15ba9a58303cb2355eda023e73fa2a8540b037bef5b3484354a72",
+      "local_image": "figures/R01-cpg-fig2-ast-cfg-pdg.png",
+      "processing": "从原PDF以216dpi裁取图形及原图题；未翻译、重排、改标注或改动图中关系"
+    },
+    {
+      "id": "R02",
+      "paper": "cpg",
+      "figure": "4",
+      "page": 5,
+      "clip": [
+        43,
+        50,
+        575,
+        199
+      ],
+      "title": "合并AST、CFG与PDG的代码属性图",
+      "placement": "F01／2.2.1（优先于R01）",
+      "file": "R02-cpg-fig4-unified-graph.png",
+      "keywords": [
+        "code property graph",
+        "program slicing"
+      ],
+      "relevance": "共享节点上叠加不同类型的边，直接支持CPG原理说明。",
+      "boundary": "原论文研究漏洞发现；本文借鉴图表示，不把漏洞检测能力当作算法识别成绩。配置约束属于本文拟增加部分。",
+      "caption_and_crop_text": "ENTRY\nEXIT\nint\n=\nx\nsource\nCALL\n<\nx\nMAX\n=\ny\n*\n2\nx\nint\nARG\nsink\ny\nDECL\nCOND\nDECL\nCALL\nENTRY\nEXIT\nfalse\nint\n=\nx\nsource\nCALL\n<\nx\nMAX\n=\ny\n*\n2\nx\nint\nARG\nsink\ny\nDECL\nPRED\nDECL\nCALL\ntrue \nε \nε \nDy \nCtrue \nCtrue \nDx \nε \nDx \nε \nAST edge\nCFG edge\nPDG edge\nFig. 4: Code property graph for the code sample given in Figure 1.",
+      "pixels": [
+        1596,
+        447
+      ],
+      "sha256": "79d76044ea492052a771d6b430352a93a798cdcbea841a14e2600813ddba8aae",
+      "local_image": "figures/R02-cpg-fig4-unified-graph.png",
+      "processing": "从原PDF以216dpi裁取图形及原图题；未翻译、重排、改标注或改动图中关系"
+    },
+    {
+      "id": "R03",
+      "paper": "graphcodebert",
+      "figure": "1",
+      "page": 3,
+      "clip": [
+        106,
+        327,
+        506,
+        503
+      ],
+      "title": "从源码、AST到变量数据流的提取",
+      "placement": "F01备选／F02 数据依赖示意参考",
+      "file": "R03-graphcodebert-fig1-dataflow.png",
+      "keywords": [
+        "GraphCodeBERT",
+        "data flow",
+        "where the value comes from"
+      ],
+      "relevance": "展示变量不同出现位置之间的取值来源，适合借鉴“代码到依赖”的图式。",
+      "boundary": "原图输入是Python源码，既不是二进制IR图，也不是本文的掩码匹配或分支合流算法；GraphCodeBERT尚未接入。",
+      "caption_and_crop_text": "def max(a, b):\nx=0\nif b>a:\nx=b\nelse:\nx=a\nreturn x\nSource code\nParse into AST\nCompiler Tool\nIdentify variable \nsequence\n5\n1\n3\n6\n7\n8\n9\n10\n4\n2\n11\ndef max(a, b):\nx=0\nif b>a:\nx=b\nelse:\nx=a\nreturn x\nIdentify variable sequence in AST\nVariable relation \na\nb\nx\n0\nb\na\nb\nx\na\nx\nx\n1\n2\n3\n4\n6\n5\n10\n8\n9\n7\n11\nExtract variable relation from AST\nValue comes from\n…\nfunction \ndefinition\nname\nparameters\nmax\na\nb\nbody\nexpression\nstatement\nassignment\nleft\nright\nx\n0\nIf statement\nreturn \nstatement\nx\ncondition\nleft\nright\na\nb\noperator\n>\nalternative\n…\nFigure 1: The procedure of extracting data ﬂow given a source code. The graph in the rightmost is\ndata ﬂow that represents the relation of ”where-the-value-comes-from” between variables.",
+      "pixels": [
+        1200,
+        528
+      ],
+      "sha256": "27f9571760675923a185381eda0b95f90eb655df5987b8efe0e34988953f37c9",
+      "local_image": "figures/R03-graphcodebert-fig1-dataflow.png",
+      "processing": "从原PDF以216dpi裁取图形及原图题；未翻译、重排、改标注或改动图中关系"
+    },
+    {
+      "id": "R04",
+      "paper": "binkit",
+      "figure": "1",
+      "page": 3,
+      "clip": [
+        43,
+        36,
+        303,
+        216
+      ],
+      "title": "二进制分析的语法、结构与语义层次",
+      "placement": "F02／2.2.3 运算依赖与有界语义判定",
+      "file": "R04-binkit-fig1-analysis-levels.png",
+      "keywords": [
+        "binary code similarity",
+        "syntactic structural semantic analysis"
+      ],
+      "relevance": "只借鉴分析层次组织；本文最终图应重点画同源状态依赖与保守合流。",
+      "boundary": "这是二进制相似性研究的分类图，不是本文算法流程，也没有直接给出本文的unknown合流规则。",
+      "caption_and_crop_text": "Binary\nCode\nAssembly \nInstruction\nIntermediate \nRepresentation\nSyntactic Analysis (S1)\nStructural Analysis (S2)\nBB\nBB\nBB\nBB\nFunc\nFunc\nFunc\nFunc\nFunc\nControl Flow Graph\nCall Graph\nSemantic Analysis (S3)\nData Flow\nI/O samples\nI/O constraints\nPath constraints\nVariables\nSystem/Library\nFunction Type\nEmbedded Vector\nSimilarity Comparison (S4)\nScoring\nNumeric vector\nExact matching\nDistance check\nGraph matching\nMachine learning\nDeep learning\nS1\nS2\nS3\nF\nF\nBinary Analysis Steps\nSimilarity Comparison\nPresemantic\nSemantic\nFeatures\nS1\nS2\nS3\nF\nF\nFig. 1: Binary Code Similarity Analysis (BCSA) workﬂow.",
+      "pixels": [
+        780,
+        540
+      ],
+      "sha256": "8c5d24d24fb6cb23f564a3bf810c45d1814f8861a736e6596776415aac764245",
+      "local_image": "figures/R04-binkit-fig1-analysis-levels.png",
+      "processing": "从原PDF以216dpi裁取图形及原图题；未翻译、重排、改标注或改动图中关系"
+    },
+    {
+      "id": "R05",
+      "paper": "p2im",
+      "figure": "2",
+      "page": 4,
+      "clip": [
+        315,
+        64,
+        560,
+        330
+      ],
+      "title": "MCU处理器与外设的交互边界",
+      "placement": "F03／2.3.1 镜像提取与固件重托管",
+      "file": "R05-p2im-fig2-mcu-interfaces.png",
+      "keywords": [
+        "firmware rehosting",
+        "MMIO",
+        "interrupt",
+        "peripheral modeling"
+      ],
+      "relevance": "解释只仿真处理器为何不足以继续执行固件，以及外设接口模型的作用。",
+      "boundary": "图中列出MMIO、中断和DMA三类接口；P2IM正文明确将DMA排除在其处理范围之外，不能据该图宣称P2IM完整建模DMA。本文重托管尚为方案。",
+      "caption_and_crop_text": "SPI\nPeripheral Bus\nSystem Bus\nRAM\nProcessor\nCore\nI2C\nUSART\nPWM\nADC\nDAC\nInterrupt\nController\nGPIO\nOn-chip\nperipherals\nMicrocontroller (MCU)\nEEPROM\nGyroscope\nRadio\nMotor drive\nTemp. Sensor\nSpeaker\nButton\nMicrocontroller-based device\nOff-chip\nperipherals\n1\n2\nLess diverse,\nusually emulated\nTIMER\nMore diverse, \n rarely emulated\nreg.\nint.\nDMA\nCTRL\n3\nFLASH\nDMA\nFigure 2: Architecture diagram of MCU devices. Firmware\nrunning on processor core interacts with peripherals via 1⃝\nmemory-mapped registers, 2⃝interrupts, and 3⃝DMA.",
+      "pixels": [
+        735,
+        798
+      ],
+      "sha256": "e7ec19314937e72818f67481ee2fa959315dd7d95f087fa109bf727215bcc161",
+      "local_image": "figures/R05-p2im-fig2-mcu-interfaces.png",
+      "processing": "从原PDF以216dpi裁取图形及原图题；未翻译、重排、改标注或改动图中关系"
+    },
+    {
+      "id": "R06",
+      "paper": "p2im",
+      "figure": "3",
+      "page": 5,
+      "clip": [
+        315,
+        68,
+        560,
+        195
+      ],
+      "title": "P2IM抽象模型、实例化与具体模型",
+      "placement": "F03／2.3.1（首选布局）",
+      "file": "R06-p2im-fig3-model-instantiation.png",
+      "keywords": [
+        "P2IM",
+        "abstract model",
+        "model instantiation"
+      ],
+      "relevance": "展示外设模型如何结合固件形成可执行条件，适合说明重托管机制。",
+      "boundary": "原方法面向固件测试；本文应自行增加密码事件和业务任务的关联，不能把原文覆盖率或测试结果作为本文结果。",
+      "caption_and_crop_text": "Firmware \nBinary\nConcrete Model\n- Mapped Registers,\n  Their Category and \n  Access Handler\n- Enabled Interrupts \n  and Firing  \n  Timing\n- Register Categories,\n  Access Patterns and \n  Access Handling\n- Interrupt Model\n- Memory Layout\nAbstract Model\n(Section 3)\nModel\nInstantiation\n(Section  4)\n- Conventions \n- MCU Documentation\nFigure 3: P2IM workﬂow",
+      "pixels": [
+        735,
+        381
+      ],
+      "sha256": "79a2015928fddb75e42a8420a759036eeb0a44eba3f6e637bc473d30b980e0de",
+      "local_image": "figures/R06-p2im-fig3-model-instantiation.png",
+      "processing": "从原PDF以216dpi裁取图形及原图题；未翻译、重排、改标注或改动图中关系"
+    },
+    {
+      "id": "R07",
+      "paper": "rf",
+      "figure": "3.1",
+      "page": 40,
+      "clip": [
+        155,
+        62,
+        506,
+        232
+      ],
+      "title": "决策树的特征分裂与叶节点分类",
+      "placement": "F04／2.4.1 随机森林的函数判定与文件聚合",
+      "file": "R07-rf-louppe-fig3-1-decision-tree.png",
+      "keywords": [
+        "random forest",
+        "decision tree",
+        "probability averaging"
+      ],
+      "relevance": "可借鉴树节点和分支的画法；本文应扩展为多树叶节点比例平均，再按文件取最大值。",
+      "boundary": "原图仅为单棵树的硬类别示例，不是森林架构图，也没有文件级聚合；原图题自身注明受Breiman等1984年著作启发。",
+      "caption_and_crop_text": "t0\nt1\nt2\nt3\nt4\nX1 ≤0.7\nX2 ≤0.5\nc2\nc2\nc1\nFigure 3.1: A decision tree ϕ built for a binary classiﬁcation problem from\nan input space X = [0, 1] × [0, 1]. (Figure inspired from Breiman\net al. [1984].)",
+      "pixels": [
+        1053,
+        510
+      ],
+      "sha256": "87aaf1210d5e86afc8bb5819e525a6c806db7304a4c77dc72aade4a64fc455c4",
+      "local_image": "figures/R07-rf-louppe-fig3-1-decision-tree.png",
+      "processing": "从原PDF以216dpi裁取图形及原图题；未翻译、重排、改标注或改动图中关系"
+    },
+    {
+      "id": "R08",
+      "paper": "graphrag",
+      "figure": "1",
+      "page": 4,
+      "clip": [
+        106,
+        66,
+        506,
+        364
+      ],
+      "title": "GraphRAG图索引、社区摘要和全局回答流程",
+      "placement": "F05／2.4.2 GraphRAG 的依赖检索与大模型解释",
+      "file": "R08-graphrag-fig1-pipeline.png",
+      "keywords": [
+        "GraphRAG",
+        "community summaries",
+        "cross-component dependency"
+      ],
+      "relevance": "直接对应图索引、社区摘要和生成回答机制，是GraphRAG配图的主要论文依据。",
+      "boundary": "原图针对文档问答；本文增加资产类型、配置版本约束和依赖路径检索。程序关系应来自已核验证据，不能把LLM抽取的关系直接视为确定事实。",
+      "caption_and_crop_text": "Source Documents\nText Chunks\ntext extraction\nand chunking\nEntities & Relationships\ndomain-tailored\nsummarization\nKnowledge Graph\ndomain-tailored\nsummarization\nGraph Communities\ncommunity\ndetection\nCommunity Summaries\ndomain-tailored\nsummarization\nCommunity Answers\nquery-focused\nsummarization\nGlobal Answer\nquery-focused\nsummarization\nIndexing Time\nQuery Time\nPipeline Stage\nFigure 1: Graph RAG pipeline using an LLM-derived graph index of source document text. This\ngraph index spans nodes (e.g., entities), edges (e.g., relationships), and covariates (e.g., claims)\nthat have been detected, extracted, and summarized by LLM prompts tailored to the domain of the\ndataset. Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index\ninto groups of elements (nodes, edges, covariates) that the LLM can summarize in parallel at both\nindexing time and query time. The “global answer” to a given query is produced using a final round\nof query-focused summarization over all community summaries reporting relevance to that query.",
+      "pixels": [
+        1200,
+        894
+      ],
+      "sha256": "b0995681c6b36685708688e5fab8c62aaee1786a9ad208a7dad018b88521ccb9",
+      "local_image": "figures/R08-graphrag-fig1-pipeline.png",
+      "processing": "从原PDF以216dpi裁取图形及原图题；未翻译、重排、改标注或改动图中关系"
+    }
+  ]
+}
