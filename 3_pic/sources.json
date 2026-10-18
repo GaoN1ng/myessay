@@ -1,0 +1,339 @@
+{
+  "date_shanghai": "2026-10-18",
+  "pdf_page_numbering": "从PDF第一页起计数，1-based，包含会议封面",
+  "usage": "第三方原图作为方案配图参考，尚未插入正文；本文实验设计须按实际材料改绘并注明借鉴出处。",
+  "papers": [
+    {
+      "id": "cpg",
+      "file": "cpg-yamaguchi-2014.pdf",
+      "title": "Modeling and Discovering Vulnerabilities with Code Property Graphs",
+      "authors": "Fabian Yamaguchi, Nico Golde, Daniel Arp, Konrad Rieck",
+      "year": "2014",
+      "venue": "IEEE Symposium on Security and Privacy, pp. 590–604",
+      "url": "https://fabianyamaguchi.com/files/2014-ieeesp.pdf",
+      "doi": "10.1109/SP.2014.44",
+      "version": "作者公开稿，15页",
+      "pdf_pages": 15,
+      "first_page_excerpt": "Modeling and Discovering Vulnerabilities\nwith Code Property Graphs\nFabian Yamaguchi∗, Nico Golde†, Daniel Arp∗and Konrad Rieck∗\n∗University of G¨ottingen, Germany\n†Qualcomm Research Germany\nAbstract—The vast majority of security breaches encountered\ntoday are a direct result of insecure code. Consequently, the\nprotection of computer systems critically depends on the rigorous\nidentiﬁcation of vulnerabilities in software, a tedious and error-\nprone process requiring signiﬁcant expertise. Unfortunately, a\nsingle ﬂaw sufﬁces to undermine the security of a system and\nthus the sheer amount of code to audit plays into the attacker’s\ncards. In this paper, we present a method to effectively mine\nlarg",
+      "sha256": "4a2e2f6526866d17315ba6a9a69bd71d6647e70b8976639dfd31969944b646f1",
+      "local_pdf": "papers/cpg-yamaguchi-2014.pdf",
+      "checked_date_shanghai": "2026-10-18",
+      "acquisition": "复用并重新核对may_pic已保存的同一公开PDF"
+    },
+    {
+      "id": "p2im",
+      "file": "p2im-feng-2020.pdf",
+      "title": "P2IM: Scalable and Hardware-independent Firmware Testing via Automatic Peripheral Interface Modeling",
+      "authors": "Bo Feng, Alejandro Mera, Long Lu",
+      "year": "2020",
+      "venue": "29th USENIX Security Symposium, pp. 1237–1254",
+      "url": "https://www.usenix.org/system/files/sec20-feng.pdf",
+      "doi": null,
+      "version": "会议官方PDF，19页，含1页封面",
+      "pdf_pages": 19,
+      "first_page_excerpt": "This paper is included in the Proceedings of the \n29th USENIX Security Symposium.\nAugust 12–14, 2020\n978-1-939133-17-5\nOpen access to the Proceedings of the \n29th USENIX Security Symposium \nis sponsored by USENIX.\nP2IM: Scalable and Hardware-independent \nFirmware Testing via Automatic Peripheral \nInterface Modeling\nBo Feng, Alejandro Mera, and Long Lu, Northeastern University\nhttps://www.usenix.org/conference/usenixsecurity20/presentation/feng\n",
+      "sha256": "a5f2796a4c55dffc113b27b5de2c656ccf3cc40c3b1a001293fd5847321c8403",
+      "local_pdf": "papers/p2im-feng-2020.pdf",
+      "checked_date_shanghai": "2026-10-18",
+      "acquisition": "复用并重新核对may_pic已保存的同一公开PDF"
+    },
+    {
+      "id": "graphrag",
+      "file": "graphrag-edge-2024-v2.pdf",
+      "title": "From Local to Global: A GraphRAG Approach to Query-Focused Summarization",
+      "authors": "Darren Edge et al.",
+      "year": "2024",
+      "venue": "arXiv:2404.16130",
+      "url": "https://arxiv.org/pdf/2404.16130v2",
+      "doi": "10.48550/arXiv.2404.16130",
+      "version": "2024年预印本，2025-02-19修订的v2，26页",
+      "pdf_pages": 26,
+      "first_page_excerpt": "From Local to Global: A GraphRAG Approach to\nQuery-Focused Summarization\nDarren Edge1†\nHa Trinh1†\nNewman Cheng2\nJoshua Bradley2\nAlex Chao3\nApurva Mody3\nSteven Truitt2\nDasha Metropolitansky1\nRobert Osazuwa Ness1\nJonathan Larson1\n1Microsoft Research\n2Microsoft Strategic Missions and Technologies\n3Microsoft Office of the CTO\n{daedge,trinhha,newmancheng,joshbradley,achao,moapurva,\nsteventruitt,dasham,robertness,jolarso}@microsoft.com\n†These authors contributed equally to this work\nAbstract\nThe use of retrieval-augmented generation (RAG) to retrieve relevant informa-\ntion from an external knowledge source enables large language models (LLMs)\nto answer questions over private and/or previously unse",
+      "sha256": "730f1a9f38d16689900969a3eeeb1b31e45eda1dcc1f37a043afa90aff76c867",
+      "local_pdf": "papers/graphrag-edge-2024-v2.pdf",
+      "checked_date_shanghai": "2026-10-18",
+      "acquisition": "复用并重新核对may_pic已保存的同一公开PDF"
+    },
+    {
+      "id": "tesseract",
+      "file": "tesseract-pendlebury-2019.pdf",
+      "title": "TESSERACT: Eliminating Experimental Bias in Malware Classification across Space and Time",
+      "authors": "Feargus Pendlebury, Fabio Pierazzi, Roberto Jordaney, Johannes Kinder, Lorenzo Cavallaro",
+      "year": "2019",
+      "venue": "28th USENIX Security Symposium, pp. 729–746",
+      "url": "https://www.usenix.org/system/files/sec19-pendlebury.pdf",
+      "landing_url": "https://www.usenix.org/conference/usenixsecurity19/presentation/pendlebury",
+      "version": "会议官方PDF，含1页会议封面",
+      "local_pdf": "papers/tesseract-pendlebury-2019.pdf",
+      "acquisition": "本轮从公开论文地址下载，并核对PDF首页、原图题及对应正文",
+      "pdf_pages": 19,
+      "first_page_excerpt": "This paper is included in the Proceedings of the \n28th USENIX Security Symposium.\nAugust 14–16, 2019 • Santa Clara, CA, USA\n978-1-939133-06-9\nOpen access to the Proceedings of the \n28th USENIX Security Symposium \nis sponsored by USENIX.\nTESSERACT: Eliminating Experimental Bias in \nMalware Classification across Space and Time\nFeargus Pendlebury, Fabio Pierazzi, and Roberto Jordaney, King’s College London & \nRoyal Holloway, University of London; Johannes Kinder, Bundeswehr University Munich; \nLorenzo Cavallaro, King’s College London\nhttps://www.usenix.org/conference/usenixsecurity19/presentation/pendlebury\n",
+      "sha256": "ec4de197f52e024d6e55a109053204ff1fe936dff11ab06ed01fa75f1d169218",
+      "checked_date_shanghai": "2026-10-18"
+    },
+    {
+      "id": "crylogger",
+      "file": "crylogger-piccolboni-2020-v1.pdf",
+      "title": "CRYLOGGER: Detecting Crypto Misuses Dynamically",
+      "authors": "Luca Piccolboni, Giuseppe Di Guglielmo, Luca P. Carloni, Simha Sethumadhavan",
+      "year": "2020/2021",
+      "venue": "2020年预印本；最终发表于IEEE Symposium on Security and Privacy 2021",
+      "url": "https://arxiv.org/pdf/2007.01061",
+      "version_url": "https://arxiv.org/pdf/2007.01061v1",
+      "landing_url": "https://arxiv.org/abs/2007.01061",
+      "doi": "10.1109/SP40001.2021.00010",
+      "version": "首页明确为arXiv:2007.01061v1，2020-07-02；图号按该18页预印本，不冒称会议终稿",
+      "local_pdf": "papers/crylogger-piccolboni-2020-v1.pdf",
+      "acquisition": "本轮从公开论文地址下载，并核对PDF首页、原图题及对应正文",
+      "pdf_pages": 18,
+      "first_page_excerpt": "CRYLOGGER:\nDetecting Crypto Misuses Dynamically\nLuca Piccolboni, Giuseppe Di Guglielmo, Luca P. Carloni, Simha Sethumadhavan\n{piccolboni, giuseppe, luca, simha}@cs.columbia.edu\nColumbia University, New York, NY, USA\nAbstract—Cryptographic (crypto) algorithms are the essential\ningredients of all secure systems: crypto hash functions and en-\ncryption algorithms, for example, can guarantee properties such\nas integrity and conﬁdentiality. Developers, however, can misuse\nthe application programming interfaces (API) of such algorithms\nby using constant keys and weak passwords. This paper presents\nCRYLOGGER, the ﬁrst open-source tool to detect crypto misuses\ndynamically. CRYLOGGER logs the paramete",
+      "sha256": "85d4e0f2e26bca812cd5689e204cb8c9e2c2390899ec60aeabc8987d1f2ec448",
+      "checked_date_shanghai": "2026-10-18"
+    },
+    {
+      "id": "fuzzware",
+      "file": "fuzzware-scharnowski-2022.pdf",
+      "title": "Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing",
+      "authors": "Tobias Scharnowski, Nils Bars, Moritz Schloegel, Eric Gustafson, Marius Muench, Giovanni Vigna, Christopher Kruegel, Thorsten Holz, Ali Abbasi",
+      "year": "2022",
+      "venue": "31st USENIX Security Symposium, pp. 1239–1256",
+      "url": "https://www.usenix.org/system/files/sec22-scharnowski.pdf",
+      "landing_url": "https://www.usenix.org/conference/usenixsecurity22/presentation/scharnowski",
+      "version": "会议官方PDF，含1页会议封面",
+      "local_pdf": "papers/fuzzware-scharnowski-2022.pdf",
+      "acquisition": "本轮从公开论文地址下载，并核对PDF首页、原图题及对应正文",
+      "pdf_pages": 19,
+      "first_page_excerpt": "This paper is included in the Proceedings of the \n31st USENIX Security Symposium.\nAugust 10–12, 2022 • Boston, MA, USA\n978-1-939133-31-1\nOpen access to the Proceedings of the \n31st USENIX Security Symposium is \nsponsored by USENIX.\nFuzzware: Using Precise MMIO Modeling \nfor Effective Firmware Fuzzing\nTobias Scharnowski, Nils Bars, and Moritz Schloegel, Ruhr-Universität Bochum; \nEric Gustafson, UC Santa Barbara; Marius Muench, Vrije Universiteit Amsterdam; \nGiovanni Vigna, UC Santa Barbara and VMware; Christopher Kruegel, \nUC Santa Barbara; Thorsten Holz and Ali Abbasi, Ruhr-Universität Bochum\nhttps://www.usenix.org/conference/usenixsecurity22/presentation/scharnowski\n",
+      "sha256": "2877b283113af7b65e1769f317a88101b2e1255368a44cbacb547105a2946bbd",
+      "checked_date_shanghai": "2026-10-18"
+    }
+  ],
+  "figures": [
+    {
+      "id": "R01",
+      "paper": "tesseract",
+      "figure": "1",
+      "page": 4,
+      "clip": [
+        316,
+        73,
+        562,
+        317
+      ],
+      "file": "R01-tesseract-fig1-data-partition.png",
+      "placement": [
+        "S01",
+        "S02"
+      ],
+      "title": "数据分布与训练／测试时间边界",
+      "keywords": [
+        "experimental bias",
+        "train test split",
+        "data partition"
+      ],
+      "relevance": "借鉴以边界和分布标记区分材料用途的表达；提示评价应交代材料组织。",
+      "boundary": "原图是Android按月样本直方图，包含原作者数据；不是家族分组四折图，不含本文RF或参考库对照。本文应另绘家族矩阵，不能移用其数量、年份或10%分布。",
+      "caption_and_crop_text": "J F M A M J J\n2014\nA S O N D J F M A M J J\n2015\nA S O N D J F M A M J J\n2016\nA S O N D\n0\n500\n1000\n1500\n2000\n2500\n3000\n3500\n4000\n4500\n5000\n5500\n6000\n6500\n7000\n7500\n8000\n8500\n9000\n9500\n10000\n10500\n11000\n383\n263\n381\n485\n608\n724\n1072\n499\n399\n591\n145\n147\n144\n129\n215\n183\n221\n216\n275\n272\n354\n313\n374\n369\n344\n476\n635\n612\n452\n278\n352\n564\n148\n81\n3440\n3067\n3485\n4101\n5081\n6066\n8745\n4788\n4176\n6345\n1305\n1444\n1564\n1231\n1888\n1838\n1953\n2098\n2521\n2768\n3077\n2932\n3010\n3289\n3478\n3959\n5818\n6368\n4052\n2806\n3027\n4881\n1377\n758\n23 190\n8 67\nTraining\nTesting\nGoodware\nMalware\nFigure 1: Details of the dataset considered throughout this\npaper. The ﬁgure reports a stack histogram with the monthly\ndistribution of apps we collect from AndroZoo: 129,728 An-\ndroid applications (with average 10% malware), spanning\nfrom Jan 2014 to Dec 2016. The vertical dotted line denotes\nthe split we use in all time-aware experiments in this paper\n(see §4 and §5): training on 2014, testing on 2015 and 2016.",
+      "local_image": "figures/R01-tesseract-fig1-data-partition.png",
+      "pixels": [
+        738,
+        732
+      ],
+      "sha256": "6ae7d16abbe351c385c41b6b08533939acf74b3af607072cf767634bee853660",
+      "processing": "由所存论文PDF以216dpi裁取，保留原图题；未重排、翻译或改变图中关系"
+    },
+    {
+      "id": "R02",
+      "paper": "cpg",
+      "figure": "4",
+      "page": 5,
+      "clip": [
+        43,
+        50,
+        575,
+        199
+      ],
+      "file": "R02-cpg-fig4-code-property-graph.png",
+      "placement": [
+        "S03"
+      ],
+      "title": "同一程序的代码属性图",
+      "keywords": [
+        "code property graph",
+        "control flow",
+        "data dependency"
+      ],
+      "relevance": "为C0--C2对照提供多类型路径和同一代码定位的表示参考。",
+      "boundary": "原图没有本文构建配置、C0--C2或密码实验；第二章已用于机制选图，本章只借鉴对照图的局部表示，避免重复整图。",
+      "caption_and_crop_text": "ENTRY\nEXIT\nint\n=\nx\nsource\nCALL\n<\nx\nMAX\n=\ny\n*\n2\nx\nint\nARG\nsink\ny\nDECL\nCOND\nDECL\nCALL\nENTRY\nEXIT\nfalse\nint\n=\nx\nsource\nCALL\n<\nx\nMAX\n=\ny\n*\n2\nx\nint\nARG\nsink\ny\nDECL\nPRED\nDECL\nCALL\ntrue \nε \nε \nDy \nCtrue \nCtrue \nDx \nε \nDx \nε \nAST edge\nCFG edge\nPDG edge\nFig. 4: Code property graph for the code sample given in Figure 1.",
+      "local_image": "figures/R02-cpg-fig4-code-property-graph.png",
+      "pixels": [
+        1596,
+        447
+      ],
+      "sha256": "79d76044ea492052a771d6b430352a93a798cdcbea841a14e2600813ddba8aae",
+      "processing": "由所存论文PDF以216dpi裁取，保留原图题；未重排、翻译或改变图中关系"
+    },
+    {
+      "id": "R03",
+      "paper": "crylogger",
+      "figure": "1",
+      "page": 2,
+      "clip": [
+        309,
+        57,
+        567,
+        273
+      ],
+      "file": "R03-crylogger-fig1-runtime-logging.png",
+      "placement": [
+        "S03"
+      ],
+      "title": "运行触发、密码API日志与独立检查",
+      "keywords": [
+        "dynamic crypto analysis",
+        "runtime logging",
+        "API parameters"
+      ],
+      "relevance": "展示执行脚本、日志采集和离线检查分开的组织方式，可用于运行观测实验的步骤。",
+      "boundary": "原方法在Android/Java密码库插桩，评价密码误用；不是Linux uprobes/eBPF、HSM或量子脆弱性识别工具，也不是本项目已实施流程。",
+      "caption_and_crop_text": "crypto library\n10 …\n11 M = MessageDigest(“SHA1”);\n12 …\n…\n19 …\n20 S = SymmEncryption(“AES”);\n21 …\napplication\nexecution log\n[MessageDigest] alg: SHA1\n[SymmEncryption] alg: AES\nMessageDigest\nSymmEncryption\nlogger\nONLINE\nOFFLINE\nchecker\ncrypto rules\nlogger\nR-01 Don’t use SHA1\nR-02 Don’t use DES\n….\nbroken hash function: SHA1\n(Section IV)\n(Section IV)\n(Section V)\nchecking\nprocedures\nAPI calls triggered\nduring the execution\n1\n2\n3\nFig. 1. Overview of CRYLOGGER.\n1⃝We run the application with an\ninstrumented crypto library. 2⃝We generate a log containing the parameters of\nthe crypto API calls. 3⃝We check the crypto rules and report all the violations.",
+      "local_image": "figures/R03-crylogger-fig1-runtime-logging.png",
+      "pixels": [
+        774,
+        648
+      ],
+      "sha256": "6852d5281d190e4b95561aadbf3fd499d93e5e3894b86a978408ff45c829769f",
+      "processing": "由所存论文PDF以216dpi裁取，保留原图题；未重排、翻译或改变图中关系"
+    },
+    {
+      "id": "R04",
+      "paper": "crylogger",
+      "figure": "10",
+      "page": 17,
+      "clip": [
+        47,
+        87,
+        567,
+        536
+      ],
+      "file": "R04-crylogger-fig10-benchmark-variants.png",
+      "placement": [
+        "S03"
+      ],
+      "title": "基础、跨过程、路径、字段与参数敏感的对照样例",
+      "keywords": [
+        "CryptoAPI-Bench",
+        "interprocedural",
+        "path sensitive",
+        "argument sensitive"
+      ],
+      "relevance": "与第三章包装调用、路径条件和动态参数等边界案例的构造直接相关，适合借鉴小型代码变体面板。",
+      "boundary": "原图题说明前六类来自CryptoAPI-Bench，作者增加参数敏感类型；图中为Java误用样例。本文须改写为C/C++与电力调用任务，不将其作为自有样本或已测结果。",
+      "caption_and_crop_text": "Listing 1. Basic\n1 public class Test_X {\n2\npublic static void main(String[] args) {\n3\nString algorithm = \"AES/ECB/PKCS5PADDING\";\n4\nCipher c = Cipher.getInstance(algorithm);\n5\n}\n6 }\nListing 3. Interprocedural\n1 public class Test_X {\n2\npublic static void main(String[] args) {\n3\nString algorithm = \"AES/ECB/PKCS5PADDING\";\n4\nmethod1(algorithm);\n5\n}\n6\npublic static void method1(String algorithm) {\n7\nmethod2(algorithm);\n8\n}\n9\npublic static void method2(String algorithm) {\n10\nCipher c = Cipher.getInstance(algorithm);\n11\n}\n12 }\nListing 5. Field Sensitive\n1 public class Test_X {\n2\nString algorithm;\n3\npublic Test_X(String alg) {\n4\nalgorithm = alg;\n5\n}\n6\npublic method(String alg) {\n7\nalg = algorithm;\n8\nCipher c = Cipher.getInstance(alg);\n9\n}\n10\npublic static void main(String[] args) {\n11\nTest_X x = new Test_X(\"AES/ECB/PKCS5PADDING\");\n12\nx.method(\"AES/CBC/PKCS5PADDING\");\n13\n}\n14 }\nListing 7. Argument Sensitive\n1 public class Test_X {\n2\npublic static void main(String[] args) {\n3\nif (condition(args)) {\n4\nalgorithm = \"AES/CBC/PKCS5PADDING\";\n5\nCipher c = Cipher.getInstance(algorithm);\n6\n}\n7\n}\n8 }\nListing 2. Miscellaneous\n1 public class Test_X {\n2\npublic static void main(String[] args) {\n3\nString alg = \"AES/ECB/PKCS5PADDING\";\n4\n// Use of a simple data structure\n5\nDataStructure data = new DataStructure(alg);\n6\nCipher c = Cipher.getInstance(data.get());\n7\n}\n8 }\n1 public class Test_X {\n2\npublic static void main(String[] args) {\n3\nString alg = \"AES/ECB/PKCS5PADDING\";\n4\n// Conversion to another type\n5\nOthertype type = ConvertOtherType(alg);\n6\nCipher c = Cipher.getInstance(data.get());\n7\n}\n8 }\nListing 4. Path Sensitive\n1 public class Test_X {\n2\npublic static void main(String[] args) {\n3\nint choice = 2;\n4\nString algorithm = \"AES/ECB/PKCS5PADDING\";\n5\nif (choice > 1)\n6\nalgorithm = \"AES/CBC/PKCS5PADDING\";\n7\nCipher c = Cipher.getInstance(algorithm);\n8\n}\n9 }\nListing 6. Multiple Classes\n1 public class Test_X {\n2\npublic static void main(String[] args) {\n3\nmethod1(\"AES/ECB/PKCS5PADDING\");\n4\n}\n5\npublic static void method1(String algorithm) {\n6\nTest_Y y = new Test_Y();\n7\ny.method(algorithm);\n8\n}\n9 }\n10 public class Test_X {\n11\npublic void method2(String algorithm) {\n12\nCipher c = Cipher.getInstance(algorithm);\n13\n}\n14 }\nFig. 10. The types of benchmarks that are present in the CryptoAPI-Bench [26]. We highlighted our modiﬁcations to make the benchmarks executable (Section VIII).\nThe ﬁrst 6 types of benchmarks (basic, miscellaneous, interprocedural, path sensitive, ﬁeld sensitive, multiple classes) were originally proposed in [26]. We added\nargument-sensitive tests so that the CryptoAPI-Bench can be used to evaluate dynamic approaches.",
+      "local_image": "figures/R04-crylogger-fig10-benchmark-variants.png",
+      "pixels": [
+        1560,
+        1347
+      ],
+      "sha256": "3bb64bc1448ea02554c7192888baf07c04145784c039c50caac2e13134093390",
+      "processing": "由所存论文PDF以216dpi裁取，保留原图题；未重排、翻译或改变图中关系"
+    },
+    {
+      "id": "R05",
+      "paper": "p2im",
+      "figure": "4",
+      "page": 9,
+      "clip": [
+        64,
+        72,
+        292,
+        286
+      ],
+      "file": "R05-p2im-fig4-model-instantiation.png",
+      "placement": [
+        "S04"
+      ],
+      "title": "外设模型实例化的执行与处理循环",
+      "keywords": [
+        "firmware rehosting",
+        "peripheral modeling",
+        "P2IM"
+      ],
+      "relevance": "借鉴执行、寄存器处理、模型更新、中断和阻塞判定的工作流组织。",
+      "boundary": "论文针对固件测试，不包含本文F0--F3分组、电力业务或密码事件核查；原文不支持由图推断完整DMA建模。",
+      "caption_and_crop_text": "Execute one instruction\n(Re-)categorize register by\naccess patterns if necessary\nUpdate the list of\nenabled interrupts\nPeripheral register\nInterrupt conﬁg\nOther accesses\nModel \nstable?\nNeeds SR \nhandler?\nExplorative \nExecution\nTime for\ninterrupt?\nYes\nNo\nFire interrupt\nStart\nTerminate\nHandle register access based\non its category (or use site)\nType of \naccess\nYes\nNo\nNo\nYes\nFigure 4: Model instantiation workﬂow",
+      "local_image": "figures/R05-p2im-fig4-model-instantiation.png",
+      "pixels": [
+        684,
+        642
+      ],
+      "sha256": "4dbdaa674d872cd67158adb7fd897a74a068938ea7dc93ff266fdc0e35598037",
+      "processing": "由所存论文PDF以216dpi裁取，保留原图题；未重排、翻译或改变图中关系"
+    },
+    {
+      "id": "R06",
+      "paper": "fuzzware",
+      "figure": "4",
+      "page": 7,
+      "clip": [
+        52,
+        73,
+        298,
+        249
+      ],
+      "file": "R06-fuzzware-fig4-mmio-handling.png",
+      "placement": [
+        "S04"
+      ],
+      "title": "仿真执行与MMIO访问模型的输入关联",
+      "keywords": [
+        "Fuzzware",
+        "MMIO access model",
+        "rehosting"
+      ],
+      "relevance": "展示相同输入如何经访问模型进入固件，可借鉴F1/F2之间保持输入和预算一致的画法。",
+      "boundary": "原图包含覆盖引导模糊测试；本方案研究受控业务状态和密码事件，不应将fuzzer、论文覆盖成绩或精确MMIO建模直接写成本工具已有能力。",
+      "caption_and_crop_text": "ISA Emulator\nFuzzing Engine\nRaw Input\nMMIO Access Model\nFirmware\n..\nFuzzware Emulator\nFigure 4: FUZZWARE’s MMIO access handling design. The fuzzing engine\ngenerates a raw input ﬁle. Upon MMIO accesses, chunks of the input ﬁle are\nconsumed by MMIO access models and translated into (potentially larger)\nhardware-generated values, which are then served to the emulated ﬁrmware.\nOnce the raw input is exhausted, coverage feedback is provided to the fuzzing\nengine to guide the fuzzing process.",
+      "local_image": "figures/R06-fuzzware-fig4-mmio-handling.png",
+      "pixels": [
+        738,
+        528
+      ],
+      "sha256": "eff824ddd54b32a25cb2124f74dc8b4ff410d42db614aaf92c1f41226cc76ff5",
+      "processing": "由所存论文PDF以216dpi裁取，保留原图题；未重排、翻译或改变图中关系"
+    },
+    {
+      "id": "R07",
+      "paper": "graphrag",
+      "figure": "1",
+      "page": 4,
+      "clip": [
+        106,
+        66,
+        506,
+        364
+      ],
+      "file": "R07-graphrag-fig1-index-query.png",
+      "placement": [
+        "S05"
+      ],
+      "title": "GraphRAG索引与查询阶段的划分",
+      "keywords": [
+        "GraphRAG",
+        "community summaries",
+        "retrieval ablation"
+      ],
+      "relevance": "借鉴索引／查询分区与社区摘要路径，再按本文G0--G3重绘受控对照和独立评分。",
+      "boundary": "原图没有G0--G3、版本条件、图路径兼容或独立审核答案；不能直接称为本文对照设计。与may_pic复用同一原图，仅供取材，正文避免重复机制图。",
+      "caption_and_crop_text": "Source Documents\nText Chunks\ntext extraction\nand chunking\nEntities & Relationships\ndomain-tailored\nsummarization\nKnowledge Graph\ndomain-tailored\nsummarization\nGraph Communities\ncommunity\ndetection\nCommunity Summaries\ndomain-tailored\nsummarization\nCommunity Answers\nquery-focused\nsummarization\nGlobal Answer\nquery-focused\nsummarization\nIndexing Time\nQuery Time\nPipeline Stage\nFigure 1: Graph RAG pipeline using an LLM-derived graph index of source document text. This\ngraph index spans nodes (e.g., entities), edges (e.g., relationships), and covariates (e.g., claims)\nthat have been detected, extracted, and summarized by LLM prompts tailored to the domain of the\ndataset. Community detection (e.g., Leiden, Traag et al., 2019) is used to partition the graph index\ninto groups of elements (nodes, edges, covariates) that the LLM can summarize in parallel at both\nindexing time and query time. The “global answer” to a given query is produced using a final round\nof query-focused summarization over all community summaries reporting relevance to that query.",
+      "local_image": "figures/R07-graphrag-fig1-index-query.png",
+      "pixels": [
+        1200,
+        894
+      ],
+      "sha256": "b0995681c6b36685708688e5fab8c62aaee1786a9ad208a7dad018b88521ccb9",
+      "processing": "由所存论文PDF以216dpi裁取，保留原图题；未重排、翻译或改变图中关系"
+    }
+  ]
+}

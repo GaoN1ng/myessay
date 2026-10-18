@@ -1,0 +1,55 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>第三章实验方案 · 论文原图参考</title>
+<style>body{margin:0;background:#f1f4f6;color:#182734;font:16px/1.75 system-ui,sans-serif}main{max-width:1000px;margin:auto;padding:28px}a{color:#12636b}article{background:white;padding:24px;margin:24px 0;border-radius:12px;border:1px solid #d8e1e5}h1{font-size:28px}h2{font-size:22px}img{display:block;max-width:100%;max-height:760px;margin:18px auto;object-fit:contain}.meta{color:#536470;font-size:14px}nav a{margin-right:18px}</style><main>
+<h1>第三章实验方案 · 论文原图参考</h1><p>6份论文、7张原图；S01—S07为TeX中的建议图位，R01—R07为第三方原图编号。优先考虑S01样本与配对对照、S05 GraphRAG查询对照、S06固件与双前端验证链。PDF页码包含会议封面。</p>
+<nav><a href="README.md">图位与绘制说明</a><a href="overview.png">全部原图缩览</a><a href="sources.json">来源与裁切记录</a></nav>
+<p>这些图片用于借鉴实验组织和表达。正文仍保留图位注释，尚未插入第三方图片；第二章已有原理图在第三章按对照设计改绘。</p>
+<article><h2>R01 · 数据分布与训练／测试时间边界</h2>
+<p class="meta">用于 S01 / S02 · 原图 1 · PDF第4页</p>
+<a href="figures/R01-tesseract-fig1-data-partition.png"><img src="figures/R01-tesseract-fig1-data-partition.png" alt="数据分布与训练／测试时间边界" loading="lazy"></a>
+<p><strong>TESSERACT: Eliminating Experimental Bias in Malware Classification across Space and Time</strong><br>Feargus Pendlebury, Fabio Pierazzi, Roberto Jordaney, Johannes Kinder, Lorenzo Cavallaro<br>28th USENIX Security Symposium, pp. 729–746 · 会议官方PDF，含1页会议封面</p>
+<p><a href="papers/tesseract-pendlebury-2019.pdf">本地论文PDF</a> · <a href="https://www.usenix.org/system/files/sec19-pendlebury.pdf">公开来源</a> · <a href="figures/R01-tesseract-fig1-data-partition.png">原图PNG</a></p>
+<p><b>借鉴点：</b>借鉴以边界和分布标记区分材料用途的表达；提示评价应交代材料组织。</p><p><b>适用范围：</b>原图是Android按月样本直方图，包含原作者数据；不是家族分组四折图，不含本文RF或参考库对照。本文应另绘家族矩阵，不能移用其数量、年份或10%分布。</p>
+<p class="meta">关键词：experimental bias / train test split / data partition</p></article>
+<article><h2>R02 · 同一程序的代码属性图</h2>
+<p class="meta">用于 S03 · 原图 4 · PDF第5页</p>
+<a href="figures/R02-cpg-fig4-code-property-graph.png"><img src="figures/R02-cpg-fig4-code-property-graph.png" alt="同一程序的代码属性图" loading="lazy"></a>
+<p><strong>Modeling and Discovering Vulnerabilities with Code Property Graphs</strong><br>Fabian Yamaguchi, Nico Golde, Daniel Arp, Konrad Rieck<br>IEEE Symposium on Security and Privacy, pp. 590–604 · 作者公开稿，15页</p>
+<p><a href="papers/cpg-yamaguchi-2014.pdf">本地论文PDF</a> · <a href="https://fabianyamaguchi.com/files/2014-ieeesp.pdf">公开来源</a> · <a href="figures/R02-cpg-fig4-code-property-graph.png">原图PNG</a></p>
+<p><b>借鉴点：</b>为C0--C2对照提供多类型路径和同一代码定位的表示参考。</p><p><b>适用范围：</b>原图没有本文构建配置、C0--C2或密码实验；第二章已用于机制选图，本章只借鉴对照图的局部表示，避免重复整图。</p>
+<p class="meta">关键词：code property graph / control flow / data dependency</p></article>
+<article><h2>R03 · 运行触发、密码API日志与独立检查</h2>
+<p class="meta">用于 S03 · 原图 1 · PDF第2页</p>
+<a href="figures/R03-crylogger-fig1-runtime-logging.png"><img src="figures/R03-crylogger-fig1-runtime-logging.png" alt="运行触发、密码API日志与独立检查" loading="lazy"></a>
+<p><strong>CRYLOGGER: Detecting Crypto Misuses Dynamically</strong><br>Luca Piccolboni, Giuseppe Di Guglielmo, Luca P. Carloni, Simha Sethumadhavan<br>2020年预印本；最终发表于IEEE Symposium on Security and Privacy 2021 · 首页明确为arXiv:2007.01061v1，2020-07-02；图号按该18页预印本，不冒称会议终稿</p>
+<p><a href="papers/crylogger-piccolboni-2020-v1.pdf">本地论文PDF</a> · <a href="https://arxiv.org/pdf/2007.01061">公开来源</a> · <a href="figures/R03-crylogger-fig1-runtime-logging.png">原图PNG</a></p>
+<p><b>借鉴点：</b>展示执行脚本、日志采集和离线检查分开的组织方式，可用于运行观测实验的步骤。</p><p><b>适用范围：</b>原方法在Android/Java密码库插桩，评价密码误用；不是Linux uprobes/eBPF、HSM或量子脆弱性识别工具，也不是本项目已实施流程。</p>
+<p class="meta">关键词：dynamic crypto analysis / runtime logging / API parameters</p></article>
+<article><h2>R04 · 基础、跨过程、路径、字段与参数敏感的对照样例</h2>
+<p class="meta">用于 S03 · 原图 10 · PDF第17页</p>
+<a href="figures/R04-crylogger-fig10-benchmark-variants.png"><img src="figures/R04-crylogger-fig10-benchmark-variants.png" alt="基础、跨过程、路径、字段与参数敏感的对照样例" loading="lazy"></a>
+<p><strong>CRYLOGGER: Detecting Crypto Misuses Dynamically</strong><br>Luca Piccolboni, Giuseppe Di Guglielmo, Luca P. Carloni, Simha Sethumadhavan<br>2020年预印本；最终发表于IEEE Symposium on Security and Privacy 2021 · 首页明确为arXiv:2007.01061v1，2020-07-02；图号按该18页预印本，不冒称会议终稿</p>
+<p><a href="papers/crylogger-piccolboni-2020-v1.pdf">本地论文PDF</a> · <a href="https://arxiv.org/pdf/2007.01061">公开来源</a> · <a href="figures/R04-crylogger-fig10-benchmark-variants.png">原图PNG</a></p>
+<p><b>借鉴点：</b>与第三章包装调用、路径条件和动态参数等边界案例的构造直接相关，适合借鉴小型代码变体面板。</p><p><b>适用范围：</b>原图题说明前六类来自CryptoAPI-Bench，作者增加参数敏感类型；图中为Java误用样例。本文须改写为C/C++与电力调用任务，不将其作为自有样本或已测结果。</p>
+<p class="meta">关键词：CryptoAPI-Bench / interprocedural / path sensitive / argument sensitive</p></article>
+<article><h2>R05 · 外设模型实例化的执行与处理循环</h2>
+<p class="meta">用于 S04 · 原图 4 · PDF第9页</p>
+<a href="figures/R05-p2im-fig4-model-instantiation.png"><img src="figures/R05-p2im-fig4-model-instantiation.png" alt="外设模型实例化的执行与处理循环" loading="lazy"></a>
+<p><strong>P2IM: Scalable and Hardware-independent Firmware Testing via Automatic Peripheral Interface Modeling</strong><br>Bo Feng, Alejandro Mera, Long Lu<br>29th USENIX Security Symposium, pp. 1237–1254 · 会议官方PDF，19页，含1页封面</p>
+<p><a href="papers/p2im-feng-2020.pdf">本地论文PDF</a> · <a href="https://www.usenix.org/system/files/sec20-feng.pdf">公开来源</a> · <a href="figures/R05-p2im-fig4-model-instantiation.png">原图PNG</a></p>
+<p><b>借鉴点：</b>借鉴执行、寄存器处理、模型更新、中断和阻塞判定的工作流组织。</p><p><b>适用范围：</b>论文针对固件测试，不包含本文F0--F3分组、电力业务或密码事件核查；原文不支持由图推断完整DMA建模。</p>
+<p class="meta">关键词：firmware rehosting / peripheral modeling / P2IM</p></article>
+<article><h2>R06 · 仿真执行与MMIO访问模型的输入关联</h2>
+<p class="meta">用于 S04 · 原图 4 · PDF第7页</p>
+<a href="figures/R06-fuzzware-fig4-mmio-handling.png"><img src="figures/R06-fuzzware-fig4-mmio-handling.png" alt="仿真执行与MMIO访问模型的输入关联" loading="lazy"></a>
+<p><strong>Fuzzware: Using Precise MMIO Modeling for Effective Firmware Fuzzing</strong><br>Tobias Scharnowski, Nils Bars, Moritz Schloegel, Eric Gustafson, Marius Muench, Giovanni Vigna, Christopher Kruegel, Thorsten Holz, Ali Abbasi<br>31st USENIX Security Symposium, pp. 1239–1256 · 会议官方PDF，含1页会议封面</p>
+<p><a href="papers/fuzzware-scharnowski-2022.pdf">本地论文PDF</a> · <a href="https://www.usenix.org/system/files/sec22-scharnowski.pdf">公开来源</a> · <a href="figures/R06-fuzzware-fig4-mmio-handling.png">原图PNG</a></p>
+<p><b>借鉴点：</b>展示相同输入如何经访问模型进入固件，可借鉴F1/F2之间保持输入和预算一致的画法。</p><p><b>适用范围：</b>原图包含覆盖引导模糊测试；本方案研究受控业务状态和密码事件，不应将fuzzer、论文覆盖成绩或精确MMIO建模直接写成本工具已有能力。</p>
+<p class="meta">关键词：Fuzzware / MMIO access model / rehosting</p></article>
+<article><h2>R07 · GraphRAG索引与查询阶段的划分</h2>
+<p class="meta">用于 S05 · 原图 1 · PDF第4页</p>
+<a href="figures/R07-graphrag-fig1-index-query.png"><img src="figures/R07-graphrag-fig1-index-query.png" alt="GraphRAG索引与查询阶段的划分" loading="lazy"></a>
+<p><strong>From Local to Global: A GraphRAG Approach to Query-Focused Summarization</strong><br>Darren Edge et al.<br>arXiv:2404.16130 · 2024年预印本，2025-02-19修订的v2，26页</p>
+<p><a href="papers/graphrag-edge-2024-v2.pdf">本地论文PDF</a> · <a href="https://arxiv.org/pdf/2404.16130v2">公开来源</a> · <a href="figures/R07-graphrag-fig1-index-query.png">原图PNG</a></p>
+<p><b>借鉴点：</b>借鉴索引／查询分区与社区摘要路径，再按本文G0--G3重绘受控对照和独立评分。</p><p><b>适用范围：</b>原图没有G0--G3、版本条件、图路径兼容或独立审核答案；不能直接称为本文对照设计。与may_pic复用同一原图，仅供取材，正文避免重复机制图。</p>
+<p class="meta">关键词：GraphRAG / community summaries / retrieval ablation</p></article></main></html>
