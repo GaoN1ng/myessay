@@ -33,7 +33,6 @@
 %\usepackage{subfigure}
 
 \usepackage{comment}
-\usepackage{appendix}
 \usepackage{geometry}
 \geometry{a4paper,left=3.5cm,right=3.5cm,top=4cm,bottom=5cm}
 \usepackage{marvosym}
@@ -112,17 +111,17 @@
 \begin{titlepage}\centering\vspace*{1.5cm}
   {\Large 作品设计与实验报告\par}\vspace{1.7cm}
   {\Huge\bfseries 面向电力边缘网关的\par 软件密码资产识别与\par 量子迁移辅助工具\par}
-  \vspace{1.1cm}{\Large QCS 识别引擎与 GridLens 应用示例\par}\vfill
+  \vspace{1.1cm}{\Large QCS 识别引擎与电力密码分析工作台\par}\vfill
   {\large 十三算法已知实现覆盖与参考补充复测修订版\par}
-  \vspace{.6cm}{\large 2026 年 10 月 18 日\par}
-  \vspace{.5cm}{\small 实现范围：Linux 软件分析；Windows 离线网页展示\par}
+  \vspace{.6cm}{\large 2026 年 10 月 19 日\par}
+  \vspace{.5cm}{\small 实现范围：Linux 软件分析与本地网页工作台\par}
 \end{titlepage}
 \chapter*{摘要}\addcontentsline{toc}{chapter}{摘要}
 电力边缘设备的软件升级、遥测通信与身份认证依赖多种密码算法。
 源码、去符号程序及固件组件的表示差异，使人工清点密码资产成本较高；
 传统公钥机制又面临容错量子计算条件下的结构性威胁。
-本作品实现密码算法识别工具 QCS，并构建虚拟电力边缘网关发布前体检示例 GridLens，
-将离线软件分析结果组织为可追溯的资产清单与迁移待办。
+本作品实现密码算法识别工具 QCS，并构建统一的本地分析工作台，
+将离线软件分析结果组织为可追溯的资产清单、辅助线索和检测报告。
 
 QCS 综合使用源码词法与语法分析、结构化符号解析、字节特征、已知函数签名、
 运算图和受预算约束的语义分析。报告区分接口引用、实现包含与运行时使用，
@@ -134,34 +133,31 @@ QCS 综合使用源码词法与语法分析、结构化符号解析、字节特�
 算法实验覆盖 AES、DES、RC4、ChaCha20、RSA、ECDSA、ECDH、MD5、SHA-1、SHA-256、SM2、SM3、SM4，
 与理论章节的十三种核心算法逐项对应。
 从既有开发总体全取源码及 x86-64/ARM64 程序，冻结 1071 个不同内容输入，
-保留全部编译变体、阴性对照和不完整状态，实际新扫得到 747 个范围内正标签。
+采用扩充至 226 条源码参考记录的当前版本全量复扫，保留全部编译变体、阴性对照及既定评分范围，共含 747 个正标签。
 TP/FP/FN 为 726/0/21，总体实现召回率为 97.19\%，漏报率为 2.81\%。
 逐算法以漏报率不超过 10\% 为目标，逐项结果及达标状态在正文列出；精确率按实际结果保留。
 完善已知版本源码覆盖及直接包含头文件的联合内容核验后，源码组漏报为 1/105，即 0.95\%。
 这些是已知开发家族的范围内回归，不能解释为独立未知实现验证。
 另以包含 110 份历史验证来源的 363 份源码进行参考补充复测，十三种算法各含 20--55 份正标签源码，
-在相同清单上继续修订语义路径并补充 77 个经主体审核的已知版本参考后，
-综合 TP/FP/FN 为 306/1/12，召回率为 96.23\%，精确率为 99.67\%，漏报率为 3.77\%，
-各算法漏报率均不超过 10\%。相较上一轮 30.19\% 基线，新增 84 个正确标签，
-未丢失原有检出且未新增误报；其中 3 个来自语义修订，81 个来自新增参考覆盖。
-最终代码加载原参考库的消融结果为 225/1/93，漏报率为 29.25\%。
+在固定最终代码下，分别使用原 149 条与补充后的 226 条源码参考记录开展配对扫描。
+补充后的综合 TP/FP/FN 为 306/1/12，召回率为 96.23\%，精确率为 99.67\%，漏报率为 3.77\%，
+各算法漏报率均不超过 10\%。原参考库的消融结果为 225/1/93，召回率为 70.75\%，
+补充参考后新增 81 个正确标签，原有正确检出与误报数量不变。
 新增参考全部来自本集合，其中 59 条对应历史验证来源；该组 110 份源码的复测召回率由 35.65\% 提高到 90.43\%。
 综合成绩主要体现已观察集合的已知版本覆盖，不代表未知家族泛化或纯语义成绩。
-原五算法混合演示、完整开发、历史复查及语义后端对照在附录保留。
 
-GridLens 将遥测通信、升级校验、身份认证与第三方插件组成固定虚拟发布包。
-每个版本与架构视图包含 6 个文件、8 项资产；整改示例将遗留摘要资产由 2 项降为 0 项，
-并保留 3 项传统公钥迁移关注。一次本机六文件现场扫描后端耗时 8.42 秒。
-作品的主要优势是证据可审查、多载体统一报告、可限制资源和无硬件展示，
-并补齐五类终端的软件级固件场景：10 份双架构自制镜像实际解包扫描，
-80 个提取文件中包含 20 个 ELF；实现标签 TP/FP/FN 为 22/1/0。
-镜像为项目模拟交付，不代表真实厂商或实体设备验证。
+五类终端的软件级固件实验实际解包并扫描 10 份双架构自制镜像，
+80 个提取文件中包含 20 个程序文件，范围内实现标签 TP/FP/FN 为 22/1/0。
+统一工作台另以电力边缘网关镜像创建实际扫描任务，恢复 8 个文件，
+识别 AES、SM4、SHA-256 三项实现包含资产，并单独保留三组辅助线索。
+组件树、证据详情和报告能够对应到同一任务及交付文件，四种报告格式与中文打印预览已核对。
+镜像为项目模拟交付，结果支持受控软件范围内的分析与复核流程，不代表真实厂商或实体设备验证。
 当前未知密码实现覆盖、完整网关运行及后量子协议迁移仍需继续研究。
 
 \noindent\textbf{关键词：}密码资产；静态程序分析；国密算法；位向量语义；量子迁移；电力边缘网关
 \chapter*{Abstract}\addcontentsline{toc}{chapter}{Abstract}
 This report presents QCS, an offline cryptographic asset identification tool,
-and GridLens, a pre-release inspection example for a virtual Linux power edge gateway.
+and a unified local workbench for power-system software inspection.
 QCS combines source analysis, structured symbols, byte patterns, known-function
 signatures, operation graphs and budgeted semantic analysis. API references,
 implementation evidence and unknown runtime use are reported separately.
@@ -171,34 +167,35 @@ typed bitvector summaries without claiming recovery of the original source code.
 A fresh, locked regression covers all thirteen core algorithms described in the
 theory chapter. Every source and x86-64/ARM64 executable in the existing development
 population is retained, including compiler variants, negative controls and partial scans.
-The 1071 distinct inputs contain 747 positive file--algorithm labels,
+The current detector, with 226 source references, rescans the same 1071 distinct
+inputs containing 747 positive file--algorithm labels,
 yielding 726 true positives, 0 false positives and 21 false negatives.
 Overall implementation recall is 97.19\% and the false-negative rate is 2.81\%.
 Per-algorithm counts and results against a 10\% false-negative ceiling are reported,
 with precision preserved as measured. After extending exact-version references
 and verifying directly included implementation headers, the source subset has
 1 miss out of 105 positive labels (0.95\%). This is known-family development regression,
-not independent generalization. The earlier five-algorithm demonstration, full development
-results, historical rechecks and semantic-backend comparisons are retained in the appendix.
+not independent generalization.
 A separately frozen expansion scans 363 distinct source inputs with 20--55 positive
-source files per algorithm. After further semantic repairs and 77 reviewed exact-version
-references, the combined scan yields 306 true positives, one false positive and 12 false
+source files per algorithm. Paired scans use the same final code with either 149 original
+or 226 expanded source references. The expanded condition yields 306 true positives, one false positive and 12 false
 negatives (3.77\% false-negative rate), with every algorithm at or below 10\%.
-Compared with the previous 30.19\% baseline, 84 correct labels are added without
-losing detections or adding false positives: three from semantic repairs and 81 from
-reference coverage. With the final code and the original reference library, the
-ablation yields 225/1/93 (29.25\% false-negative rate).
+The original-reference condition yields 225/1/93 with 70.75\% recall.
+Adding 77 reviewed references increases recall to 96.23\% and adds 81 correct labels,
+with no loss of correct detections and no change in the false-positive count.
 All 77 added references come from this corpus, including 59 from its 110 historical-validation
 source files; recall within that group rises from 35.65\% to 90.43\% after reference addition.
 Incomplete scans and provenance remain recorded. The combined result primarily
 measures known-version coverage on an observed development corpus; it is neither
 a pure semantic result nor an independent family holdout.
-GridLens presents traceable evidence, human-reviewed migration tasks and two-release
-comparison through an offline website. A six-file live scan takes 8.42 seconds on
-the recorded host. Five distinct terminal software scenarios also provide ten
+Five distinct terminal software scenarios provide ten
 synthetic firmware images, actually unpacked and scanned across two architectures.
 Their twenty ELF files yield 22 true positives, one false positive and no false
-negatives in the declared scope; these are software fixtures, not vendor-device validation.
+negatives in the declared scope. A separate workbench task scans an x86-64 power edge
+gateway image, extracts eight files and reports three implementation assets for AES,
+SM4 and SHA-256, with three additional clue groups kept unconfirmed. Component tracing,
+evidence details, four report formats and a printable Chinese report are checked against
+the same task. These are controlled software fixtures, not vendor-device validation.
 Unseen-implementation coverage and end-to-end post-quantum
 migration remain open research and engineering tasks.
 \mainmatter
@@ -207,8 +204,6 @@ migration remain open research and engineering tasks.
 \chapter{系统设计与实验方案}\input{chapter/3.tex}
 \chapter{实验结果与分析}\input{chapter/4.tex}
 \chapter{总结与展望}\input{chapter/5.tex}
-\appendix\chapter{实验记录、图像与复现入口}\input{chapter/appendix.tex}
-\chapter{完整开发与历史评测结果}\label{chap:historical-results}\input{chapter/history-results.tex}
 \backmatter\renewcommand{\bibname}{参考文献}
 \bibliographystyle{plain}\bibliography{bib/references}
 \end{document}
